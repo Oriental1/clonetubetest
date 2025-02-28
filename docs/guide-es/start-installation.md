@@ -174,7 +174,7 @@ Después de instalar la aplicación, tienes que realizar los siguientes pasos pa
 
 5. Cambia los ficheros hosts que apuntan al dominio de tu servidor.
 
-   - Windows: `c:\Windows\System32\Drivers\etc\hosts`
+   - Windows: `D:\Windows\System32\Drivers\etc\hosts`
    - Linux: `/etc/hosts`
 
    Añade las siguientes lineas:

@@ -184,7 +184,7 @@
 
 5. 更改主机文件以将域指向您的服务器。
 
-   - Windows: `c:\Windows\System32\Drivers\etc\hosts`
+   - Windows: `D:\Windows\System32\Drivers\etc\hosts`
    - Linux: `/etc/hosts`
 
    添加以下行：

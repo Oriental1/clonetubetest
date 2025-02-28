@@ -8,6 +8,10 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
+use common\models\Video;
+use common\models\VideoView;
+use common\models\Subscriber;
+use common\models\User;
 
 /**
  * Site controller
@@ -62,7 +66,43 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $user = Yii::$app->user->identity;
+        $userId = Yii::$app->user->id;
+        $latestVideo = Video::find()
+            ->latest()
+            ->creator($userId)
+            ->limit(1)
+            ->one();
+        
+        $numberOfView = VideoView::find()
+            ->alias('vv')
+            ->innerJoin(Video::tableName(). ' v',
+                'v.video_id = vv.video_id')
+            ->andWhere(['v.created_by' => $userId])
+            ->count();
+        
+        //caching
+        $numberOfSubscribers = Yii::$app->cache->get('subscribers-'.$userId);        
+        if (!$numberOfSubscribers) {
+            //$numberOfSubscribers should be $user->getSubscribers()->count(); instead write like this to call the full namesapce
+            //to avoid (Undefined method 'getSubscribers')
+            $numberOfSubscribers = User::findOne($user->id)->getSubscribers()->count();
+            Yii::$app->cache->set('subscribers-'.$userId, $numberOfSubscribers);
+        }
+        
+        $subscribers = Subscriber::find()
+            ->with('user')
+            ->andWhere(['channel_id' => $userId])
+            ->orderBy('created_at DESC')
+            ->limit(3)
+            ->all();
+
+        return $this->render('index', [
+            'latestVideo' => $latestVideo,
+            'numberOfView' => $numberOfView,
+            'numberOfSubscribers' => $numberOfSubscribers,
+            'subscribers' => $subscribers,
+        ]);
     }
 
     /**
@@ -76,7 +116,7 @@ class SiteController extends Controller
             return $this->goHome();
         }
 
-        $this->layout = 'blank';
+        $this->layout = 'auth';
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {

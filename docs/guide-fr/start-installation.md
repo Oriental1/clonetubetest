@@ -197,7 +197,7 @@ Après que vous avez installé l'application, vous devez accomplir les étapes s
 
 5. Modifier le fichier hosts pour qu'il pointe sur le domaine ad hoc. 
 
-   - Windows: `c:\Windows\System32\Drivers\etc\hosts`
+   - Windows: `D:\Windows\System32\Drivers\etc\hosts`
    - Linux: `/etc/hosts`
 
    Ajoutez les lignes suivantes :

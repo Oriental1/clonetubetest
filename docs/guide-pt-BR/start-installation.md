@@ -178,7 +178,7 @@ para inicializar a aplicação, sendo necessário realizá-los apenas uma vez no
     
 5. Altere o arquivo de hosts para apontar o domínio do seu servidor.
 
-   - Windows: `c:\Windows\System32\Drivers\etc\hosts`
+   - Windows: `D:\Windows\System32\Drivers\etc\hosts`
    - Linux: `/etc/hosts`
    
    Adicione as seguintes linhas:

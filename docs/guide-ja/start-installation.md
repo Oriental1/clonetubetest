@@ -204,7 +204,7 @@ Bower と NPM の依存パッケージを Composer によって管理するた�
 
 5. hosts ファイルを書き換えて、フロントエンドとバックエンドのドメインをあなたのサーバに向ける。
 
-   - Windows: `c:\Windows\System32\Drivers\etc\hosts`
+   - Windows: `D:\Windows\System32\Drivers\etc\hosts`
    - Linux: `/etc/hosts`
 
    次の行を追加します。

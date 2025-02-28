@@ -199,7 +199,7 @@ zrobić raz na każdym nowym środowisku.
 
 5. Zmodyfikuj plik hostów, aby wskazać domenę na serwerze.
 
-   - Windows: `c:\Windows\System32\Drivers\etc\hosts`
+   - Windows: `D:\Windows\System32\Drivers\etc\hosts`
    - Linux: `/etc/hosts`
 
    Dodaj poniżesz linie:

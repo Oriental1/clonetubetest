@@ -2,3 +2,14 @@ codeception-local.php
 main-local.php
 params-local.php
 test-local.php
+
+# Ignore vendor & runtime files
+/vendor/
+/runtime/
+/web/assets/
+/tests/_output/
+/tests/_support/_generated/
+/.DS_Store
+/.idea
+/.env
+/composer.lock
