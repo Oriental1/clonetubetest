@@ -19,7 +19,8 @@
         "yiisoft/yii2-symfonymailer": "~2.0.3",
         "yiisoft/yii2-bootstrap5": "^2.0",
         "yiisoft/yii2-imagine": "^2.3",
-        "wbraganca/yii2-dynamicform": "*"
+        "wbraganca/yii2-dynamicform": "*",
+        "phpoffice/phpspreadsheet": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

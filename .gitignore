@@ -1,49 +1,46 @@
-# yii console commands
-/yii
-/yii_test
-/yii_test.bat
+# Yii Console Commands  
+/yii  
+/yii_test  
+/yii_test.bat  
 
-# phpstorm project files
-.idea
+# IDE Project Files  
+.idea/                  # PhpStorm  
+nbproject/              # NetBeans  
+.buildpath              # Zend Studio  
+.project                # Zend Studio  
+.settings/              # Zend Studio  
 
-# netbeans project files
-nbproject
+# OS-Specific Files  
+Thumbs.db               # Windows Thumbnail Cache  
+.DS_Store               # macOS Finder Cache  
 
-# zend studio for eclipse project files
-.buildpath
-.project
-.settings
+# Composer  
+/vendor/                # Composer dependencies  
+composer.phar           # Composer itself  
+/composer.lock  
 
-# windows thumbnail cache
-Thumbs.db
+# PHPUnit  
+/phpunit.phar           # PHPUnit itself  
+/phpunit.xml            # Local PHPUnit config  
 
-# composer vendor dir
-/vendor
+# Vagrant  
+/.vagrant  
 
-# composer itself is not needed
-composer.phar
+# Logs & Runtime Data  
+/backend/runtime/  
+/frontend/runtime/  
+/console/runtime/  
 
-# Mac DS_Store Files
-.DS_Store
+# Node.js & Frontend  
+/node_modules/  
 
-# phpunit itself is not needed
-phpunit.phar
-# local phpunit config
-/phpunit.xml
+# Uploaded Files (Keep safe outside Git)  
+/uploads/  
 
-# vagrant runtime
-/.vagrant
+# Web Generated Files (can be rebuilt)  
+/frontend/web/assets/  
+/backend/web/assets/  
 
-# ignore generated files
-/frontend/web/index.php
-/frontend/web/index-test.php
-/frontend/web/robots.txt
-/backend/web/index.php
-/backend/web/index-test.php
-/backend/web/robots.txt
-"/backend/runtime/" 
-"/frontend/runtime/" 
-"/console/runtime/" 
-"/vendor/" 
-"/node_modules/" 
-"/uploads/" 
+# Config Files (If using environment-specific settings)  
+/.env  
+

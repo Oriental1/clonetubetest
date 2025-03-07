@@ -44,8 +44,7 @@ return [
             'showScriptName' => false,
             'rules' => [
                 'c/<username>' => 'channel/view', // Fix: Remove extra slash in 'channel/view'
-                'v/<id>' => 'video/view', // Fix: Remove extra slash in 'video/view'
-                
+                'v/<id>' => 'video/view',
                 
                 /* General rules for controllers and actions
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',

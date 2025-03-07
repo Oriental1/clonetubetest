@@ -5,7 +5,7 @@
  * 
  */
 
-use PhpParser\Node\Expr\AssignOp\Div;
+use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\ListView;
 
@@ -24,3 +24,8 @@ use yii\widgets\ListView;
     ]
 ]) ?>
 
+
+<?php echo Html::a('Dynamic Form', Url::to(['form/index']), 
+    ['class' => 'btn btn-primary']) ?>
+<?php echo Html::a('eXcel to database', Url::to(['excel/index']), 
+    ['class' => 'btn btn-primary']) ?>
