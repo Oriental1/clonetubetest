@@ -24,8 +24,3 @@ use yii\widgets\ListView;
     ]
 ]) ?>
 
-
-<?php echo Html::a('Dynamic Form', Url::to(['form/index']), 
-    ['class' => 'btn btn-primary']) ?>
-<?php echo Html::a('eXcel to database', Url::to(['excel/index']), 
-    ['class' => 'btn btn-primary']) ?>

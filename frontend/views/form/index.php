@@ -47,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'template' => '{view} {update} {delete}',
                 'buttons' => [
                     'view' => function ($url, $model) {
-                        return Html::a('<i class="fas fa-eye"></i>', $url, ['class' => 'btn btn-primary btn-sm']);
+                        return Html::a('<i class="fas fa-eye"></i>', $url, ['class' => 'btn btn-secondary btn-sm']);
                     },
                     'update' => function ($url, $model) {
                         return Html::a('<i class="fas fa-edit"></i>', $url, ['class' => 'btn btn-primary btn-sm']);

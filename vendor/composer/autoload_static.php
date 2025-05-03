@@ -4,12 +4,12 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitd518d6f837cce6905220f5864c0d95ea
+class ComposerStaticInitcbf5ae26e425e59ebe3189ee98699580
 {
     public static $files = array (
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
@@ -17,8 +17,8 @@ class ComposerStaticInitd518d6f837cce6905220f5864c0d95ea
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
+        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'e3b2795a8a512b6083af088fb53afe6c' => __DIR__ . '/..' . '/codeception/codeception/functions.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '77e7c5c0b74965caa0fbb0a094b7713f' => __DIR__ . '/..' . '/codeception/verify/src/Codeception/bootstrap.php',
@@ -123,6 +123,10 @@ class ComposerStaticInitd518d6f837cce6905220f5864c0d95ea
             'Complex\\' => 8,
             'Codeception\\Extension\\' => 22,
             'Codeception\\' => 12,
+        ),
+        'B' => 
+        array (
+            'Behat\\Gherkin\\' => 14,
         ),
     );
 
@@ -349,6 +353,10 @@ class ComposerStaticInitd518d6f837cce6905220f5864c0d95ea
             1 => __DIR__ . '/..' . '/codeception/codeception/src/Codeception',
             2 => __DIR__ . '/..' . '/codeception/stub/src',
         ),
+        'Behat\\Gherkin\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/behat/gherkin/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -364,13 +372,6 @@ class ComposerStaticInitd518d6f837cce6905220f5864c0d95ea
             'Diff' => 
             array (
                 0 => __DIR__ . '/..' . '/phpspec/php-diff/lib',
-            ),
-        ),
-        'B' => 
-        array (
-            'Behat\\Gherkin' => 
-            array (
-                0 => __DIR__ . '/..' . '/behat/gherkin/src',
             ),
         ),
     );
@@ -1042,10 +1043,10 @@ class ComposerStaticInitd518d6f837cce6905220f5864c0d95ea
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitd518d6f837cce6905220f5864c0d95ea::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitd518d6f837cce6905220f5864c0d95ea::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitd518d6f837cce6905220f5864c0d95ea::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitd518d6f837cce6905220f5864c0d95ea::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitcbf5ae26e425e59ebe3189ee98699580::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitcbf5ae26e425e59ebe3189ee98699580::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitcbf5ae26e425e59ebe3189ee98699580::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitcbf5ae26e425e59ebe3189ee98699580::$classMap;
 
         }, null, ClassLoader::class);
     }

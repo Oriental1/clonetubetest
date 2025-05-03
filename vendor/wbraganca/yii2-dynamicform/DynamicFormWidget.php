@@ -199,6 +199,7 @@ class DynamicFormWidget extends \yii\base\Widget
         $crawler->addHTMLContent($content, \Yii::$app->charset);
         $root = $document->appendChild($document->createElement('_root'));
         $crawler->rewind();
+        $crawler = $crawler->first(); // ✅ This moves to the first element
         $root->appendChild($document->importNode($crawler->current(), true));
         $domxpath = new \DOMXPath($document);
         $crawlerInverse = $domxpath->query(CssSelector::toXPath($this->widgetItem));

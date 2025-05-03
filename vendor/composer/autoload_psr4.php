@@ -60,4 +60,5 @@ return array(
     'Complex\\' => array($vendorDir . '/markbaker/complex/classes/src'),
     'Codeception\\Extension\\' => array($vendorDir . '/codeception/codeception/ext'),
     'Codeception\\' => array($vendorDir . '/codeception/verify/src/Codeception', $vendorDir . '/codeception/codeception/src/Codeception', $vendorDir . '/codeception/stub/src'),
+    'Behat\\Gherkin\\' => array($vendorDir . '/behat/gherkin/src'),
 );
